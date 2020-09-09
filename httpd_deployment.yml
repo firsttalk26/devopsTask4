@@ -22,4 +22,4 @@ spec:
         name: webserver
         ports:
         - containerPort: 80
-          name: webserver
+          name: httpd-service

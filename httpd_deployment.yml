@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: httpd-deploy 
+  name: webserver-deployment 
   labels:
     app: webserver
     type: html

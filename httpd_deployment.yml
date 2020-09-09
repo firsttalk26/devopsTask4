@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: webserver-deployment 
+  name: httpd-deployment 
   labels:
     app: webserver
     type: html
@@ -23,11 +23,3 @@ spec:
         ports:
         - containerPort: 80
           name: webserver
-        volumeMounts:
-        - name: webserver-pv
-          mountPath: /usr/local/apache2/htdocs/
-      volumes:
-      - name: webserver-pv
-        persistentVolumeClaim:
-    
-          claimName: pvc-html
